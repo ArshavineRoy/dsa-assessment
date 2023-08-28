@@ -1,49 +1,75 @@
-# dsa-assessment
+# Data Structures and Algorithms Assessment
 
-In the same files or different scripts code out the following functions,
-push to a github repo and submit it for grading.
+## Phase 3 Week 2 Compulsory Lab
 
-Stacks:
+## Stacks
 
-Question 1: Implement a function is_balanced(expression) that takes a string
-containing parentheses, curly braces, and square brackets,and determines whether
-the expression is balanced.
+### Question 1
 
-An expression is considered balanced if each opening bracket has a corresponding closing
-bracket in the correct order.
+Implement a function `is_balanced(expression)` that takes a string
+containing parentheses, curly braces, and square brackets,and determines whether the expression is balanced.
 
-sample input =
+*An expression is considered balanced if each opening bracket has a corresponding closing bracket in the correct order.*
+
+```python
+sample input:
 
 expression1 = "([]{})"
-
 expression2 = "([)]"
 
-print(is_balanced(expression1)) # Output: True
+print(is_balanced(expression1)) 
+print(is_balanced(expression2))
 
-print(is_balanced(expression2)) # Output: False
+# True
+# False
+```
 
-Sequences (Lists/Tuples):
+## Sequences (Lists/Tuples)
 
-Question 2: Write a function remove_duplicates(sequence) that takes a
-sequence (list or tuple) and returns a new sequence with duplicates
-removed while maintaining the original order of elements.
+### Question 2
 
-sample input =
+Write a function `remove_duplicates(sequence)` that takes a sequence (list or tuple) and returns a new sequence with duplicates removed while maintaining the original order of elements.
+
+```python
+sample input:
 
 input_sequence = [2, 3, 2, 4, 5, 3, 6, 7, 5]
+
 result = remove_duplicates(input_sequence)
-print(result) # Output: [2, 3, 4, 5, 6, 7]
 
-Dictionaries:
+print(result) 
 
-Question 3: Implement a function word_frequency(sentence) that takes
-a sentence and returns a dictionary containing the frequency of each
-word in the sentence.
+# [2, 3, 4, 5, 6, 7]
+```
 
-Ignore punctuation and consider words in a case-insensitive manner.
+## Dictionaries
 
-sample input =
+### Question 3
 
-sentence = "This is a test sentence. This sentence is a test."
-result = word_frequency(sentence)
-print(result)
+Implement a function `word_frequency(sentence)` that takes a sentence and returns a dictionary containing the frequency of each word in the sentence.
+
+> Ignore punctuation and consider words in a case-insensitive manner.
+
+```python
+sample input:
+
+sentence = "This is a test sentence? I'm sure this is a test sentence."
+
+result = word_frequency(sentence) 
+
+print(result) 
+
+# {'this': 2, 'is': 2, 'a': 2, 'test': 2, 'sentence': 2, "i'm": 1, 'sure': 1}
+```
+
+## Authors
+
+- [Arshavine Waema](https://github.com/ArshavineRoy)
+- [Helder Lucau](https://github.com/Helder-Lucau)
+- [Grace Maina](https://github.com/njagiiii)
+- [Victor Odambatafwa](https://github.com/VictorOdambatafwa22)
+- [Edmond Wanyama](https://github.com/wanyama23)
+
+## License
+
+Licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.
